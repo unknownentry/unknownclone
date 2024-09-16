@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 13px 60px;
+    background: #111418b6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.664);
+}
+
+.logo {
+    font-size: 35px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.5s;
+}
+nav{
+    float: right;
+}
+nav a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: .3s;
+    padding: 3px 16px;
+    border-radius: 5px;
+    border: rgb(0, 106, 114) solid 2px;
+    letter-spacing: .5px;
+}
+.logo:hover{
+    color: rgb(62, 242, 255);
+}
+nav a:hover,
+nav a.active {
+    color: rgb(255, 255, 255);
+    background-color: rgba(110, 238, 255, 0.342);
+    border: #0ef solid 2px;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+/* ===== home ======== */
+.sec1div1{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+} 
+
+.sec1div1 h1{
+    font-size: 100px;
+    margin-bottom: -15px;
+    color: rgb(216, 252, 255);
+}
+.sec1div1 p{
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+.abtbtn{
+    background: none;
+    text-decoration: none;
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+    border: rgb(90, 250, 255) solid 3px;
+    margin-top: 70px;
+}
+.abtbtn a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: .5s;
+}
+.abtbtn:hover{
+    background: #00ffee62;
+    border: rgb(180, 246, 255) solid 3px;
+    transition: .8s;
+}
+.nme{
+    color: #00ffee;
+}
+.mine{
+    margin-top: 90px;
+    margin-bottom: 10px;
+    height: 200px;
+    border-radius: 50%;
+    border: rgba(177, 255, 183, 0.452) solid 4px;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.788);
+}
+.home{
+    background: url(i1.jpg) no-repeat rgba(0, 0, 0, 0.74);
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+    background-position: center center;
+}
+/* ===== about ======== */
+.about{
+    background: url(i2.jpg) no-repeat rgba(0, 0, 0, 0.829);
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+}
+.sec2div1{
+    position: absolute;
+    transform: translateY(50%);
+    text-align: center;
+    width: 100%;
+}
+.pd{
+    margin-bottom: 100px;
+    margin-top: -150px;
+}
+.pd h1{
+    font-size: 35px;
+    margin-bottom: 10px;
+    text-shadow: 0 7px 10px #111111;
+    color: #6bff73;
+}
+.pd p{
+    font-size: 20px;
+    text-shadow: 0 7px 10px #111111;
+    color: #b7ffbb;
+    letter-spacing: -1px;
+}
+.description{
+    font-size: 20px;
+    text-shadow: 0 7px 10px #111111;
+    color: #feffd7;
+    letter-spacing: 0.5px;
+}
+/* ===== creations ======== */
+.creations{
+    background: url(i3.jpg) no-repeat rgba(0, 0, 0, 0.829);
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+    background-position: center bottom;
+}
+.main{
+    padding: 80px 100px 50px;
+    text-align: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.container img{
+    width: 350px;
+    object-fit: cover;
+    object-position: bottom;
+    margin: 5px;
+    margin: 5px 15px;
+    border: 4px solid rgba(255, 180, 232, 0.075);
+    border-radius: 10px;
+}
+.viewmore a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: 3px solid #ff68ff;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #ffd0ff;
+}
+.viewmore a:hover{
+    background: #ff00ff65;
+    transition: .5s;
+}
+/* ===== contact ======== */
+.contact{
+    background: url(i4.jpg) no-repeat rgba(0, 0, 0, 0.829);
+    background-blend-mode: darken;
+    color: white;
+    background-position: center center;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.footer{
+    width: 100%;
+    height: 10vh;
+    bottom: -300%;
+    left: 0;
+    background: #161616;
+    position: absolute;
+}
+@media (max-width:1360px){
+    .container img{
+        width: 340px;
+    }
+}
+@media (max-width:1330px){
+    .container img{
+        width: 320px;
+    }
+    .main{
+        padding: 80px 80px 50px;
+    }
+}
+@media (max-width:1250px){
+    .container img{
+        width: 300px;
+    }
+    .main{
+        padding: 80px 60px 50px;
+    }
+}
+@media (max-width:1200px){
+    .container img{
+        width: 300px;
+    }
+    .main{
+        padding: 80px 50px 50px;
+    }
+}
+@media (max-width:1150px){
+    .container img{
+        width: 280px;
+    }
+    .main{
+        padding: 80px 50px 50px;
+    }
+}
+@media (max-width:1100px){
+    .container img{
+        width: 260px;
+    }
+    .main{
+        padding: 80px 50px 50px;
+    }
+}
+@media (max-width:1050px){
+    .container img{
+        width: 260px;
+    }
+    .main{
+        padding: 80px 40px 50px;
+    }
+}
+@media (max-width:1000px){
+    .container img{
+        width: 350px;
+    }
+    .main{
+        padding: 80px 40px 50px;
+    }
+    #hide1{
+        display: none;
+    }
+}
+
+@media (max-width: 952px){
+    header{
+        padding-left: 40px;
+        padding-right: 10px;      
+    }
+    nav a{
+        padding: 3px 13px;
+        margin-left: 15px;
+    }
+    nav{
+        margin-right: 20px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+        transition: .5s;
+    }
+    .checkbtn:hover{
+        color: rgb(117, 255, 246)
+    }
+    nav{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #000000e8;
+        right: -100%;
+        top: 65px;
+        text-align: center;
+        transition: all .5s;
+        margin-right: 0;
+        padding: 20% 150px;
+    }
+    nav a{
+        display: block;
+        justify-content: space-between;
+        margin-left: 0px;
+        padding: 10px;
+        margin: 30px;
+    }
+    #check:checked ~ nav{
+        right: 0;
+    }
+    .sec1div1 h1{
+        font-size: 80px;
+    }
+    .sec1div1 p{
+        font-size: 20px;
+        margin-top: 5px;
+        padding: 0 60px;
+    }
+    .mine{
+        margin-top: 70px;
+    }
+    .sec2div1{
+        position: absolute;
+        transform: translateY(50%);
+        text-align: center;
+        width: 100%;
+    }
+    .pd{
+        margin-bottom: 90px;
+        margin-top: -200px;
+    }
+    .pd h1{
+        font-size: 30px;
+        margin-bottom: 20px;
+        text-shadow: 0 7px 10px #111111;
+        color: #6bff73;
+    }
+    .pd p{
+        font-size: 20px;
+        text-shadow: 0 7px 10px #111111;
+        color: #b7ffbb;
+        letter-spacing: -1px;
+        line-height: 30px;
+    }
+    .description{
+        font-size: 15px;
+        text-shadow: 0 7px 10px #111111;
+        color: #feffd7;
+        letter-spacing: 0.5px;
+        line-height: 30px;
+    }
+    .abtbtn:hover{
+        background: none;
+    }
+    .container img{
+            width: 290px;
+        }
+        .main{
+            padding: 80px 40px 50px;
+        }
+}
+@media (max-width: 750px){
+    .container img{
+        width: 350px;
+    }
+    .main{
+        padding: 80px 40px 50px;
+    }
+    #hide2{
+        display: none;
+    }
+}
+
+@media (max-width: 700px){
+    header{
+        padding-left: 10px;
+    }
+    .checkbtn{
+        margin-right: 5px;
+    }
+}
+@media (max-width: 672px){
+    .click button{
+        margin-top: 10px;
+    }
+    .click button a{
+        font-size: 18px;
+    }
+}
+@media (max-width: 600px){
+    .click button a{
+        font-size: 15px;
+    }
+    .container img{
+        width: 310px;
+    }
+    .main{
+        padding: 80px 40px 50px;
+    }
+}
+@media (max-width: 475px){
+    header{
+        padding-left: 10px;
+    }
+    .checkbtn{
+        margin-right: 5px;
+    }
+    .sec1div1 h1{
+        font-size: 70px;
+    }
+    .mine{
+        margin-bottom: -20px;
+        height: 150px;
+    }
+    .click button {
+        margin-top: 20px;
+        border: rgba(246, 177, 255, 0.767) solid 3px;
+        background: none;
+        border-radius: 20px;
+        padding: 5px 20px;
+    }
+    .click button a{
+        text-decoration: none;
+        color: #ffc8ff;
+        font-size: 35px;
+    }
+    .click button:hover{
+        background: #ff00ff4d;
+        color: #ff68ff;
+        transition: .5s;
+    }
+}

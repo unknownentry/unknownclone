@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}  
+body{
+    background: url(mainlogo.jpg) rgba(0, 0, 0, 0.829);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 13px 60px;
+    background: #111418b6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.664);
+    height: 70px;
+}
+.logo {
+    font-size: 35px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.5s;
+    background: none;
+}
+nav a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    background: none;
+    transition: .3s;
+    padding: 3px 16px;
+    border-radius: 5px;
+    border: rgb(0, 106, 114) solid 2px;
+    letter-spacing: .5px;
+}
+.logo:hover{
+    color: rgb(62, 242, 255);
+}
+nav a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgba(110, 238, 255, 0.342);
+    border: #0ef solid 2px;
+}
+.main{
+    padding: 100px 100px 50px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+img{
+    width: 350px;
+    object-fit: cover;
+    object-position: bottom;
+    margin: 5px;
+    border: 4px solid rgba(255, 255, 255, 0.075);
+    border-radius: 10px;
+}
+@media (max-width:1300px){
+    .main{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    img{
+        width: 320px;
+    }
+}
+@media (max-width:1150px){
+    .main{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    img{
+        width: 380px;
+    }
+}
+@media (max-width:1150px){
+    .main{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    img{
+        width: 380px;
+    }
+}
+@media (max-width:900px){
+    .main{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    img{
+        width: 340px;
+    }
+}
+@media (max-width:800px){
+    .main{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    img{
+        width: 340px;
+    }
+}
+@media (max-width:790px){
+    .main{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    img{
+        width: 470px;
+    }
+}
+@media (max-width:600px){
+    img{
+        width: 380px;
+    }
+    header{
+        padding: 13px 30px;
+    }
+}
