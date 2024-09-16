@@ -375,9 +375,9 @@ section {
     .container img{
             width: 290px;
         }
-        .main{
-            padding: 80px 40px 50px;
-        }
+    .main{
+        padding: 80px 40px 50px;
+    }
 }
 @media (max-width: 750px){
     .container img{
@@ -399,18 +399,7 @@ section {
         margin-right: 5px;
     }
 }
-@media (max-width: 672px){
-    .click button{
-        margin-top: 10px;
-    }
-    .click button a{
-        font-size: 18px;
-    }
-}
 @media (max-width: 600px){
-    .click button a{
-        font-size: 15px;
-    }
     .container img{
         width: 310px;
     }
@@ -432,21 +421,41 @@ section {
         margin-bottom: -20px;
         height: 150px;
     }
-    .click button {
-        margin-top: 20px;
-        border: rgba(246, 177, 255, 0.767) solid 3px;
-        background: none;
-        border-radius: 20px;
-        padding: 5px 20px;
+}
+@media (max-width: 428px),(max-height: 738px){
+     nav{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #000000e8;
+        right: -100%;
+        top: 80px;
+        text-align: center;
+        transition: all .5s;
+        margin-right: 0;
+        padding: 40% 100px;
     }
-    .click button a{
-        text-decoration: none;
-        color: #ffc8ff;
-        font-size: 35px;
+    .description{
+        font-size: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
-    .click button:hover{
-        background: #ff00ff4d;
-        color: #ff68ff;
-        transition: .5s;
+    .viewmore a{
+        font-size: 18px;
+    }
+    .main{
+        padding-bottom: 10px;
+    }
+    .container{
+        margin-bottom: 80px;
+    }
+    .sec1div1 p{
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+    .mine{
+        margin-top: 90px;
+        margin-bottom: 10px;
+        height: 230px;
     }
 }
