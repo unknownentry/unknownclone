@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
-}  
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 body{
-    background: url(mainlogo.jpg) rgba(0, 0, 0, 0.829);
+    background: url(i15.png) rgba(0, 0, 0, 0.829) no-repeat;
     background-blend-mode: darken;
     background-size: cover;
-    background-repeat: no-repeat;
+    margin: 0;
 }
+
 header{
     position: fixed;
     top: 0;
@@ -55,42 +55,44 @@ nav a:hover{
     background-color: rgba(110, 238, 255, 0.342);
     border: #0ef solid 2px;
 }
+
 .main{
-    padding: 100px 100px 50px;
+    padding: 100px;
 }
-.container{
-        display: flex;
-        width: 100%;
-        flex-wrap: wrap;
-        justify-content: center;
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .card{
     width: 350px;
     height: 350px;
     padding: 2rem 1rem;
     background: none;
-    margin: 10px;
     position: relative;
     display: flex;
     align-items: flex-end;
-    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.664);
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
     transition: 0.5s ease-in-out;
+    margin: 10px 0 10px 10px;
+    border-radius: 10px;
 }
 .card:hover{
     transform: translateY(-10px);
 }
 .card::before{
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     display: block;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(59, 59, 59, 0.466), rgba(255, 255, 255, 0.438));
+    background: linear-gradient(to top, rgba(214, 214, 214, 0.61), rgba(0, 0, 0, 0));
     z-index: 2;
     transition: 0.5s all;
     opacity: 0;
+    border-radius: 10px;
 }
 .card:hover::before{
     opacity: 1;
@@ -102,56 +104,44 @@ nav a:hover{
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: 10px;
 }
-.card .text{
+.card .info{
     position: relative;
     z-index: 3;
     color: #fff;
     opacity: 0;
     transform: translateY(30px);
     transition: 0.5s all;
-    cursor: pointer;
 }
-.card:hover .text{
+.card:hover .info{
     opacity: 1;
     transform: translateY(0px);
 }
-.card .text a{
-    text-decoration: none;
-    color: black;
-    background: white;
-    padding: 2px 6px;
-    border-radius: 10px;
-    font-weight: 500;
-    border: 2px solid rgb(193, 255, 190);
+.card .info h1{
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-shadow: 0px 7px 10px rgba(0,0,0,0.4);
 }
-
+.card .info .btn{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    border-radius: 10px;
+}
+.card .info .btn:hover{
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.2);
+    background: #d1d1d1;
+}
 
 @media (max-width: 428px){
     header{
-        padding: 13px 10px;
+        padding: 13px 20px;
     }
-    .logo{
-        font-size: 30px;
-    }
-    .card{
-        width: 250px;
-        height: 250px;
-    }
-    .main{
-        padding: 100px 80px 50px;
-    }
-    .card:hover::before{
-        opacity: 0;
-    }
-    .card:hover{
-        transform: translateY(0px);
-    }
-    .card .text{
-        opacity: 1;
-        transform: translateY(10px);
-    }
-    .card .text a{
-        font-size: 10px;
-    }
+
 }
