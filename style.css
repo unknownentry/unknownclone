@@ -20,7 +20,6 @@ header {
     z-index: 100;
     box-shadow: 0 7px 10px rgba(0, 0, 0, 0.664);
 }
-
 .logo {
     font-size: 35px;
     color: #fff;
@@ -85,6 +84,7 @@ section {
     border-radius: 20px;
     border: rgb(90, 250, 255) solid 3px;
     margin-top: 70px;
+    margin-right: 20px;
 }
 .abtbtn a{
     text-decoration: none;
@@ -97,12 +97,32 @@ section {
     border: rgb(180, 246, 255) solid 3px;
     transition: .8s;
 }
+.insta{
+    background: none;
+    text-decoration: none;
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+    border: rgb(90, 250, 255) solid 3px;
+    margin-top: 70px;
+    margin-left: 20px;
+}
+.insta a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: .5s;
+}
+.insta:hover{
+    background: #00ffee62;
+    border: rgb(180, 246, 255) solid 3px;
+    transition: .8s;
+}
 .nme{
     color: #00ffee;
 }
 .mine{
     margin-top: 90px;
-    margin-bottom: 10px;
+    margin-bottom: -20px;
     height: 200px;
     border-radius: 50%;
     border: rgba(177, 255, 183, 0.452) solid 4px;
@@ -139,10 +159,9 @@ section {
     color: #6bff73;
 }
 .pd p{
-    font-size: 20px;
+    font-size: 23px;
     text-shadow: 0 7px 10px #111111;
     color: #b7ffbb;
-    letter-spacing: -1px;
 }
 .description{
     font-size: 20px;
@@ -193,13 +212,6 @@ section {
     background: #ff00ff65;
     transition: .5s;
 }
-/* ===== contact ======== */
-.contact{
-    background: url(i4.jpg) no-repeat rgba(0, 0, 0, 0.829);
-    background-blend-mode: darken;
-    color: white;
-    background-position: center center;
-}
 .checkbtn{
     font-size: 30px;
     color: white;
@@ -211,14 +223,6 @@ section {
 }
 #check{
     display: none;
-}
-.footer{
-    width: 100%;
-    height: 10vh;
-    bottom: -300%;
-    left: 0;
-    background: #161616;
-    position: absolute;
 }
 @media (max-width:1360px){
     .container img{
@@ -303,7 +307,7 @@ section {
         display: block;
         transition: .5s;
     }
-    .checkbtn:hover{
+    #check:checked ~ .checkbtn{
         color: rgb(117, 255, 246)
     }
     nav{
@@ -423,13 +427,17 @@ section {
     }
 }
 @media (max-width: 428px){
-     nav{
+    nav{
         padding: 40% 100px;
+        top: 80px;
     }
     .description{
         font-size: 18px;
         padding-left: 10px;
         padding-right: 10px;
+    }
+    .checkbtn:hover{
+        background: none;
     }
     .viewmore a{
         font-size: 18px;
@@ -448,5 +456,17 @@ section {
         margin-top: 90px;
         margin-bottom: 10px;
         height: 230px;
+    }
+    .home{
+        background-position-x: center;
+    }
+    .about{
+        background-position-x: center;
+    }
+    .creations{
+        background-position-x: right;
+    }
+    .contact{
+        background-position: center center;
     }
 }
