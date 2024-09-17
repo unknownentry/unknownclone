@@ -144,7 +144,7 @@ section {
 }
 .sec2div1{
     position: absolute;
-    transform: translateY(50%);
+    transform: translateY(35%);
     text-align: center;
     width: 100%;
 }
@@ -307,16 +307,13 @@ section {
         display: block;
         transition: .5s;
     }
-    #check:checked ~ .checkbtn{
-        color: rgb(117, 255, 246)
-    }
     nav{
         position: fixed;
         width: 100%;
         height: 100vh;
         background: #000000e8;
         right: -100%;
-        top: 65px;
+        top: 80px;
         text-align: center;
         transition: all .5s;
         margin-right: 0;
@@ -334,6 +331,9 @@ section {
     }
     .sec1div1 h1{
         font-size: 80px;
+    }
+    #check:checked ~ .checkbtn{
+        color: rgb(117, 255, 246)
     }
     .sec1div1 p{
         font-size: 20px;
