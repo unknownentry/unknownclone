@@ -59,78 +59,99 @@ nav a:hover{
     padding: 100px 100px 50px;
 }
 .container{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
 }
-img{
+.card{
     width: 350px;
+    height: 350px;
+    padding: 2rem 1rem;
+    background: none;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.664);
+    transition: 0.5s ease-in-out;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(59, 59, 59, 0.466), rgba(255, 255, 255, 0.438));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+.card:hover::before{
+    opacity: 1;
+}
+.card img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    object-position: bottom;
-    margin: 5px;
-    border: 4px solid rgba(255, 255, 255, 0.075);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.card .text{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    cursor: pointer;
+}
+.card:hover .text{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.card .text a{
+    text-decoration: none;
+    color: black;
+    background: white;
+    padding: 2px 6px;
     border-radius: 10px;
+    font-weight: 500;
+    border: 2px solid rgb(193, 255, 190);
 }
-@media (max-width:1300px){
-    .main{
-        padding-left: 70px;
-        padding-right: 70px;
-    }
-    img{
-        width: 320px;
-    }
-}
-@media (max-width:1150px){
-    .main{
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-    img{
-        width: 380px;
-    }
-}
-@media (max-width:1150px){
-    .main{
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-    img{
-        width: 380px;
-    }
-}
-@media (max-width:900px){
-    .main{
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    img{
-        width: 340px;
-    }
-}
-@media (max-width:800px){
-    .main{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    img{
-        width: 340px;
-    }
-}
-@media (max-width:790px){
-    .main{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    img{
-        width: 470px;
-    }
-}
-@media (max-width:600px){
-    img{
-        width: 380px;
-    }
+
+
+@media (max-width: 428px){
     header{
-        padding: 13px 30px;
+        padding: 13px 10px;
+    }
+    .logo{
+        font-size: 30px;
+    }
+    .card{
+        width: 250px;
+        height: 250px;
+    }
+    .main{
+        padding: 100px 80px 50px;
+    }
+    .card:hover::before{
+        opacity: 0;
+    }
+    .card:hover{
+        transform: translateY(0px);
+    }
+    .card .text{
+        opacity: 1;
+        transform: translateY(10px);
+    }
+    .card .text a{
+        font-size: 10px;
     }
 }
