@@ -42,6 +42,10 @@ nav a {
     border: rgb(0, 106, 114) solid 2px;
     letter-spacing: .5px;
 }
+nav a i{
+    margin-right: 5px;
+    font-size: 15px;
+}
 .logo:hover{
     color: rgb(62, 242, 255);
 }
@@ -85,12 +89,21 @@ section {
     border: rgb(90, 250, 255) solid 3px;
     margin-top: 70px;
     margin-right: 20px;
+    cursor: pointer;
 }
 .abtbtn a{
     text-decoration: none;
     color: #fff;
     font-size: 20px;
     transition: .5s;
+}
+.abtbtn a i{
+    font-size: 16px;
+    margin-left: 5px;
+}
+.insta a i{
+    font-size: 20px;
+    margin-left: 5px;
 }
 .abtbtn:hover{
     background: #00ffee62;
@@ -105,6 +118,7 @@ section {
     border: rgb(90, 250, 255) solid 3px;
     margin-top: 70px;
     margin-left: 20px;
+    cursor: pointer;
 }
 .insta a{
     text-decoration: none;
@@ -198,6 +212,10 @@ section {
     border: 4px solid rgba(255, 180, 232, 0.075);
     border-radius: 10px;
 }
+.viewmore a i{
+    margin-left: 5px;
+    font-size: 18px;
+}
 .viewmore a{
     text-align: center;
     text-decoration: none;
@@ -213,7 +231,7 @@ section {
     transition: .5s;
 }
 .checkbtn{
-    font-size: 30px;
+    font-size: 28px;
     color: white;
     float: right;
     line-height: 40px;
@@ -221,9 +239,18 @@ section {
     cursor: pointer;
     display: none;
 }
+.uncheckbtn{
+    font-size: 30px;
+    margin-right: 5px;
+    color: white;
+    float: right;
+    cursor: pointer;
+    display: none;
+}
 #check{
     display: none;
 }
+
 @media (max-width:1360px){
     .container img{
         width: 340px;
@@ -333,7 +360,11 @@ section {
         font-size: 80px;
     }
     #check:checked ~ .checkbtn{
-        color: rgb(117, 255, 246)
+        display: none;
+    }
+    #check:checked ~ .uncheckbtn{
+        display: block;
+        color: #68fff5;
     }
     .sec1div1 p{
         font-size: 20px;
@@ -447,6 +478,9 @@ section {
     }
     .container{
         margin-bottom: 80px;
+    }
+    .sec2div1{
+        transform: translateY(40%);
     }
     .sec1div1 p{
         font-size: 18px;
