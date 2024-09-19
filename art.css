@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 *{
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 body{
-    background: url(i15.png) rgba(0, 0, 0, 0.829) no-repeat;
+    background: url(i17.jpg) no-repeat rgba(2, 2, 2, 0.54);
     background-blend-mode: darken;
     background-size: cover;
     background-position: center center;
 }
 
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -24,7 +25,6 @@ header{
     align-items: center;
     z-index: 100;
     box-shadow: 0 7px 10px rgba(0, 0, 0, 0.664);
-    height: 80px;
 }
 .logo {
     font-size: 35px;
@@ -32,23 +32,25 @@ header{
     text-decoration: none;
     font-weight: 600;
     transition: 0.5s;
-    background: none;
 }
-nav a i{
-    margin-right: 5px;
-    font-size: 15px;
+nav{
+    float: right;
 }
-nav a{
+nav a {
     font-size: 18px;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    background: none;
+    margin-left: 20px;
     transition: .3s;
     padding: 3px 16px;
     border-radius: 5px;
     border: rgb(0, 106, 114) solid 2px;
     letter-spacing: .5px;
+}
+nav a i{
+    margin-right: 5px;
+    font-size: 15px;
 }
 .logo:hover{
     color: rgb(62, 242, 255);
@@ -58,15 +60,13 @@ nav a:hover{
     background-color: rgba(110, 238, 255, 0.342);
     border: #0ef solid 2px;
 }
-.main{
-    padding: 100px;
-}
+
 .wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 100px 50px 50px 50px;
 }
-
 .card{
     width: 350px;
     height: 350px;
@@ -149,9 +149,63 @@ nav a:hover{
         transition: .5s ease-in-out;
 }
 
-@media (max-width: 428px){
+@media (max-width:858px){
     .card{
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
+    }
+    .card .info{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    .card .info h1{
+        font-size: 15px;
+    }
+    .card .info .btn{
+        padding: 0.3rem .8rem;
+    }
+    .card:hover{
+        transform: translateY(00px);
+    }
+    .card:hover::before{
+        opacity: 0;
     }
 }
+@media (max-width:700px){
+    header{
+        padding: 13px 20px;
+    }
+    .logo{
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 428px){
+    header{
+        padding: 13px 10px;
+    }
+    .logo{
+        font-size: 30px;
+    }
+    .card{
+        width: 300px;
+        height: 300px;
+    }
+    .card .info{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    .card .info h1{
+        font-size: 15px;
+    }
+    .card .info .btn{
+        padding: 0.3rem .8rem;
+    }
+    .card:hover{
+        transform: translateY(00px);
+    }
+    .card:hover::before{
+        opacity: 0;
+    }
+}
+
